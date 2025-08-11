@@ -1,28 +1,29 @@
 import React from "react";
 import {view, text, Image, Button} from 'react-native'
+import { View } from "react-native/types_generated/index";
 
 //estrutura basica (principal)
-function app (){
+function App (){
   return(
-    <view>
-      <text>hellow world</text>
+    <View>
+      <Text>hellow world</Text>
       <Button title="mudar" onPress={butao}></Button>
-    </view>
+    </View>
 
   );
 }
 
 
 //estrutura do Button
-function butao (){
+function Butao (){
   
 
 }
 //usando parametros css
-function inicio(){
+function Inicio(){
   return(
-    <text style = {{ color: "red", textAlign: "center"}}> cabeçalho</text>
+    <Text style = {{ color: "red", textAlign: "center"}}> cabeçalho</Text>
   )
 }
 
-export default app
+export default App
